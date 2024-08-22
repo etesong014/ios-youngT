@@ -57,7 +57,7 @@ console.log(deleted);
 bts1.splice(1, 0, "차은우", "이도현");
 console.log(bts1); // [ '진', '차은우', '이도현', '제이홉', 'RM' ]
 
-// slice 사용, 일부분으로 새로운 배열을 만듬, 원본은 그대로
+// slice 사용, 일부분으로 새로운 배열을 만듬(복사), 원본은 그대로
 let bts3 = bts1.slice(0,2);
 console.log(bts3); // [ '진', '차은우' ]
 console.log(bts1); // [ '진', '차은우', '이도현', '제이홉', 'RM' ]

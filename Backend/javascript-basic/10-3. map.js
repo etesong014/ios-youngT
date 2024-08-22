@@ -12,15 +12,15 @@ console.log(map.has("group")); // true
 
 // Map 활용
 // 키에 해당하는 값 읽어오기
-console.log(map.get("name")); // undefined
+console.log(map.get("name")); // undefined, 에러나진 않음
 console.log(map.get("group")); // bts
 
 // 추가, 수정
-map.set("nation", "korea");
+map.set("nation", "korea"); // 키값이 없는 경우 추가
 console.log(map);
-map.set("group", "bts1");
+map.set("group", "bts1"); // 키값이 있는 경우 수정
 console.log(map);
 
 // 삭제
-map.delete("genfer");
+map.delete("gender");
 console.log(map);

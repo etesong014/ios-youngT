@@ -1,4 +1,4 @@
-console.log(Math.abs(-10))
+console.log(Math.abs(-10)) // 절대값
 console.log(Math.ceil(1.4)); // 올림
 console.log(Math.floor(1.4)); // 버림
 console.log(Math.round(1.49)); // 반올림

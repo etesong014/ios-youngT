@@ -82,8 +82,8 @@ console.log(result)
 
 // 로또 발생기 1~46 6개
 let lotto = new Set();
-while (lotto.size<=6){ // 숫자를 뽑는 횟수를 알 수 없음(중복가능하기 때문에 그래서 길이로 판단) , lotto.length 사용 불가 size 사용, true 사용 가능
-    let num  = Math.floor(Math.random() * 46) + 1;
+while (lotto.size<6){ // 숫자를 뽑는 횟수를 알 수 없음(중복가능하기 때문에 그래서 길이로 판단) , lotto.length 사용 불가 size 사용, true 사용 가능
+    let num  = Math.floor(Math.random() * 46) + 1; // Math.random() 범위 공식 작은수~큰수를 구하시오 : Math.random(큰수 - 작은수 + 1) + 작은수
     lotto.add(num);
     if(lotto.size >= 6){
         break;
